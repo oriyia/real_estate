@@ -1,5 +1,4 @@
-
-
+from calculated_data.data import *
 
 
 def calculation_income_investment():
@@ -16,7 +15,3 @@ def calculation_income_investment():
         investment_table.loc[x+1] = [accumulated_amount, replenishment, increase_percentage,
                                      increase_percentage_total, increase_interest]
     return investment_table
-
-
-df = calculation_income_investment()
-print(df)
